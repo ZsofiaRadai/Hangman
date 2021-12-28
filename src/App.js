@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Game from './components/Game/Game';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>HANGMAN</h1>
+        <h3>Hangman Game in React</h3>
+        <h3>Use the alphabet below to guess the word before you run out of lives.</h3>
       </header>
+
+      <div className="gameContainer">
+        <Game />
+      </div>
     </div>
   );
 }
